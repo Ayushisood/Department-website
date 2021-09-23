@@ -1,4 +1,4 @@
-import TypingEffect from "./TypingEffect";
+import TypingEffect from "../TypingEffect";
 import React from "react";
 import "./Banner.css";
 
