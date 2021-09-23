@@ -10,7 +10,7 @@ function FacultyCard(props) {
             <div class="faculty__card_details">
                 <h2>{props.name}</h2>
                 <p>{props.desg}</p>
-                <button onClick={props.profLink}>View more</button>
+                <a href={props.profLink}>View more</a>
             </div>
         </div>
     );

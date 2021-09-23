@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./Nav.css";
 
 function Nav() {
@@ -35,11 +35,21 @@ function Nav() {
           alt="college-logo"
         ></img>
         <div className="nav__list">
-          <h2 className="nav__list_item">Home</h2>
-          <h2 className="nav__list_item">Faculty</h2>
-          <h2 className="nav__list_item">Events</h2>
-          <h2 className="nav__list_item">Gallery</h2>
-          <h2 className="nav__list_item">Contact</h2>
+          <Link className="nav__list_item" to="/">
+            <h2>Home</h2>
+          </Link>
+          <Link className="nav__list_item" to="/faculty">
+            <h2>Faculty</h2>
+          </Link>
+          <Link className="nav__list_item" to="/events">
+            <h2>Events</h2>
+          </Link>
+          <Link className="nav__list_item" to="/gallery">
+            <h2>Gallery</h2>
+          </Link>
+          <Link className="nav__list_item" to="/contact">
+            <h2>Contact</h2>
+          </Link>
         </div>
 
         <img
