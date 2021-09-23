@@ -8,10 +8,10 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="App">
+    <div style={{ background: "#111" }}>
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route path="/">
             <Home />
           </Route>
           <Route path="/faculty">
