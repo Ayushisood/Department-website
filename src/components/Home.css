@@ -1,0 +1,12 @@
+.home-bg {
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+  color: aliceblue;
+}
+.home-content {
+  margin: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
