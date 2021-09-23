@@ -1,5 +1,5 @@
-//import TypingEffect from "./TypingEffect";
-import React, { useEffect, useState } from "react";
+import TypingEffect from "./TypingEffect";
+import React from "react";
 import "./Banner.css";
 
 function Banner() {
@@ -12,7 +12,9 @@ function Banner() {
       }}
     >
       <div className="banner__contents ">
-        <h1 className="banner__title">CS DEPARTMENT</h1>
+        <h1 className="banner__title">
+          <TypingEffect text="CS DEPARTMENT" />
+        </h1>
         <div className="banner__buttons">
           <button className="banner__button">Know More</button>
           <button className="banner__button">Login</button>

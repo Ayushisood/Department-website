@@ -1,0 +1,22 @@
+.card {
+  background-color: teal;
+  margin: 40px;
+  object-fit: cover;
+  width: 550px;
+}
+.images {
+  width: 550px;
+}
+
+.card__content {
+  padding: 30px;
+}
+
+.card__text {
+  padding: 15px;
+}
+
+.card:hover {
+  transform: scale(1.035);
+  cursor: pointer;
+}
