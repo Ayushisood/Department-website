@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
-import Nav from "../Nav";
-import Banner from "../Banner";
+import Nav from "./Nav";
+import Banner from "./Banner";
 
 function Home() {
   return (

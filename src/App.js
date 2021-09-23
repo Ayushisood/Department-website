@@ -11,19 +11,19 @@ function App() {
     <div style={{ background: "#111" }}>
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/faculty">
+          <Route exact path="/faculty">
             <Faculty />
           </Route>
-          <Route path="/events">
+          <Route exact path="/events">
             <Events />
           </Route>
-          <Route path="/gallery">
+          <Route exact path="/gallery">
             <Gallery />
           </Route>
-          <Route path="/contact">
+          <Route exact path="/contact">
             <Contact />
           </Route>
         </Switch>
