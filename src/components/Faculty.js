@@ -11,63 +11,63 @@ function Faculty() {
       imgSrc: "https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png",
       name: "Dr. Anita Goel",
       designation: "Professor",
-      profileLink: ""
+      profileLink: "http://people.du.ac.in/~agoel/index.html"
     },
     {
       id: 2,
       imgSrc: "https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png",
       name: "Dr. Hema Banati",
       designation: "Professor",
-      profileLink: ""
+      profileLink: "http://dsc.du.ac.in/wp-content/uploads/2021/07/hb_Faculty_Proforma.pdf"
     },
     {
       id: 3,
       imgSrc: "https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png",
       name: "Mrinali Yadav",
       designation: "Teacher",
-      profileLink: ""
+      profileLink: "http://dsc.du.ac.in/wp-content/uploads/2021/04/Computer-Science_Mrinali-Yadav.pdf"
     },
     {
       id: 4,
       imgSrc: "https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png",
       name: "Shilpi Taneja",
       designation: "Teacher",
-      profileLink: ""
+      profileLink: "http://dsc.du.ac.in/wp-content/uploads/2021/04/Computer-Science_Shilpi-Taneja.pdf"
     },
     {
       id: 5,
       imgSrc: "https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png",
       name: "Sheetal Taneja",
       designation: "Teacher",
-      profileLink: ""
+      profileLink: "http://dsc.du.ac.in/wp-content/uploads/2021/04/Computer-Science_Sheetal-Taneja.pdf"
     },
     {
       id: 6,
       imgSrc: "https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png",
       name: "Sapna Grover",
       designation: "Teacher",
-      profileLink: ""
+      profileLink: "http://dsc.du.ac.in/wp-content/uploads/2021/04/Comp-Sc_Sapna-Grover.pdf"
     },
     {
       id: 7,
       imgSrc: "https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png",
       name: "Rashmi Yadav",
       designation: "Teacher",
-      profileLink: ""
+      profileLink: "http://dsc.du.ac.in/wp-content/uploads/2021/04/CompSc_Rashmi-Yadav.pdf"
     },
     {
       id: 8,
       imgSrc: "https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png",
       name: "Mehak",
       designation: "Teacher",
-      profileLink: ""
+      profileLink: "http://dsc.du.ac.in/wp-content/uploads/2021/04/Comp-Sc_Mehak.pdf"
     },
     {
       id: 9,
       imgSrc: "https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png",
       name: "Amit Kumar",
       designation: "Teacher",
-      profileLink: ""
+      profileLink: "http://dsc.du.ac.in/wp-content/uploads/2021/04/Comp-Sc_Amit-Kumar.pdf"
     }
   ]
 

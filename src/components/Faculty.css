@@ -55,16 +55,16 @@
     margin: 2% 0;
 }
 
-.faculty__card_details button{
-    border: none;
-    background: none;
+.faculty__card_details a{
+    text-decoration: none;
     border-radius: 20px;
     box-shadow: 0 0 3px darkslategrey;
     margin: 10px 0;
     padding: 10px 15px;
+    color: rgb(22, 22, 22);
 }
 
-.faculty__card_details button:hover{
+.faculty__card_details a:hover{
     cursor: pointer;
     background-color: teal;
     color: white;

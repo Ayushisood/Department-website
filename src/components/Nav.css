@@ -36,14 +36,15 @@
   display: flex;
   justify-content: space-between;
   font-weight: 500;
-  color: darkorange;
   position: fixed;
   right: 7%;
   margin-top: 5px;
 }
 
 .nav__list_item {
+  color: darkorange;
   margin-left: 30px;
+  text-decoration: none;
 }
 .nav__list_item:hover {
   cursor: pointer;
