@@ -8,22 +8,22 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div style={{ background: "#111" }}>
+    <div style={{ background: "rgb(202, 255, 237)" }}>
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/Faculty">
+          <Route exact path="/faculty">
             <Faculty />
           </Route>
-          <Route path="/Events">
+          <Route exact path="/events">
             <Events />
           </Route>
-          <Route path="/Gallery">
+          <Route exact path="/gallery">
             <Gallery />
           </Route>
-          <Route path="/Contact">
+          <Route exact path="/contact">
             <Contact />
           </Route>
         </Switch>

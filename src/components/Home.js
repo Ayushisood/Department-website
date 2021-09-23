@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
-import Nav from "../Nav";
-import Banner from "../Banner";
-import Card from "./Card";
-import Footer from "../Footer";
+import Nav from "./Nav";
+import Banner from "./home/Banner";
+import Card from "./home/Card";
+import Footer from "./Footer";
 
 function Home() {
   return (
