@@ -13,12 +13,8 @@ function Banner() {
     >
       <div className="banner__contents ">
         <h1 className="banner__title">
-          <TypingEffect text="CS DEPARTMENT" />
+          <TypingEffect text="COMPUTER SCIENCE DEPARTMENT" />
         </h1>
-        <div className="banner__buttons">
-          <button className="banner__button">Know More</button>
-          <button className="banner__button">Login</button>
-        </div>
 
         <h1 className="banner__description">
           The Computer Science Department represents the technological face of

@@ -1,12 +1,37 @@
 .home-bg {
-  margin: 20px;
-  padding: 5px;
   text-align: center;
-  color: rgb(22, 22, 22);
+  color: indigo;
 }
 .home-content {
   margin: 20px;
   padding: 30px;
   display: flex;
   justify-content: space-between;
+}
+.accordian-holder {
+  width: 80%;
+  margin: 0 auto;
+}
+.accord {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.accord-header {
+  color: indigo;
+  font-weight: 800;
+}
+
+.crousel-holder {
+  margin-top: 30px;
+  background-color: rgb(216, 183, 240);
+  margin-bottom: 60px;
+}
+
+.news-holder {
+  margin: 0 auto;
+}
+
+.news-holder > h1 {
+  margin: 40px 0px;
 }

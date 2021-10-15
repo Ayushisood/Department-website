@@ -1,9 +1,10 @@
 .card {
-  background-color: teal;
+  background-color: indigo;
   margin: 40px;
   object-fit: cover;
   width: 550px;
   color: aliceblue;
+  box-shadow: 5px 10px 8px #3b0539;
 }
 .images {
   width: 550px;
