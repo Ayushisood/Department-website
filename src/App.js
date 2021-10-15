@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div style={{ background: "rgb(202, 255, 237)" }}>
+    <div style={{ background: "rgba(247, 242, 242, 0.795)" }}>
       <Router>
         <Switch>
           <Route exact path="/">

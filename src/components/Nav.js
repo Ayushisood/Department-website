@@ -1,32 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import React from "react";
+import { useHistory, Link } from "react-router-dom";
 import "./Nav.css";
 
 function Nav() {
-  const [show, showState] = useState(false); // show is variable and its initial value is false, function showState will manipulate the state of show variable
-
   const history = useHistory();
-  const transitionNavBar = () => {
-    if (window.scrollY > 100) {
-      showState(true);
-    } else {
-      showState(false);
-    }
-  };
-
-  useEffect(
-    () =>
-      //callback function having side-effect
-      {
-        window.addEventListener("scroll", transitionNavBar);
-        return () => window.removeEventListener("scroll", transitionNavBar); // this is a cleanup function to clean the previous side-effect
-      },
-    [] // empty dependency array so that side-effect run once after initial rendering
-  );
 
   return (
-    // {`nav ${show && "nav__black"}`} , it means only show navbar_black when show variable is true
-    <div className={`nav ${show && "nav__black"}`}>
+    <div className="nav">
       <div className="nav__contents">
         <img
           onClick={() => history.push("./")} //when clicks, render the homepage
@@ -36,19 +16,19 @@ function Nav() {
         ></img>
         <div className="nav__list">
           <Link className="nav__list_item" to="/">
-            <h2>Home</h2>
+            <h3>Home</h3>
           </Link>
           <Link className="nav__list_item" to="/faculty">
-            <h2>Faculty</h2>
+            <h3>Faculty</h3>
           </Link>
           <Link className="nav__list_item" to="/events">
-            <h2>Events</h2>
+            <h3>Events</h3>
           </Link>
           <Link className="nav__list_item" to="/gallery">
-            <h2>Gallery</h2>
+            <h3>Gallery</h3>
           </Link>
           <Link className="nav__list_item" to="/contact">
-            <h2>Contact</h2>
+            <h3>Contact</h3>
           </Link>
         </div>
 
