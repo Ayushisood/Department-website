@@ -18,7 +18,7 @@ function Footer() {
           <a href="#" className="fa fa-google"></a>
           <a href="#" className="fa fa-linkedin"></a>
         </div>
-        <h3 className="copyright"> &copy; 2021 Department of CS</h3>
+        <p className="copyright"> &copy; 2021 Department of CS</p>
       </form>
     </div>
   );
