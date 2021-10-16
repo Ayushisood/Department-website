@@ -15,8 +15,8 @@ function Footer() {
         <div className="icons">
           <a href="#" className="fa fa-facebook"></a>
           <a href="#" className="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" className="fa fa-google"></a>
+          <a href="#" className="fa fa-linkedin"></a>
         </div>
         <h3 className="copyright"> &copy; 2021 Department of CS</h3>
       </form>
