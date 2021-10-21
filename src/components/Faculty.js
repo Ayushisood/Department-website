@@ -101,8 +101,7 @@ function Faculty() {
         }}>
           <div className={`${styles["faculty__head"]}`}>Faculty members</div>
           <div className={`${styles["faculty__description"]}`}>
-            Nisi commodo elit esse tempor pariatur sint. Nostrud est pariatur
-            laboris consequat. Aliquip sunt consectetur occaecat in.
+            Professional and Proficient. Teachers of Computer Science Department of Dyal Singh College, University of Delhi.
           </div>
         </div>
 
