@@ -1,5 +1,5 @@
 import React from "react";
-import "./Faculty.css";
+import styles from "./faculty.module.css";
 import FacultyCard from "./faculty/faculty-card";
 import Nav from "./Nav";
 import Footer from "./Footer";
@@ -92,14 +92,14 @@ function Faculty() {
     <div>
       <Nav />
 
-      <div class="faculty__container">
-        <div class="faculty__head">Faculty members</div>
-        <div class="faculty__description">
+      <div className={`${styles["faculty__container"]}`}>
+        <div class={`${styles["faculty__head"]}`}>Faculty members</div>
+        <div class={`${styles["faculty__description"]}`}>
           Nisi commodo elit esse tempor pariatur sint. Nostrud est pariatur
           laboris consequat. Aliquip sunt consectetur occaecat in.
         </div>
 
-        <div class="faculty__card_container">
+        <div class={`${styles["faculty__card_container"]}`}>
           {faculties.map((faculty) => {
             return (
               <FacultyCard

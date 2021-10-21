@@ -5,6 +5,7 @@ import Faculty from "./components/Faculty";
 import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import Comest from "./components/Comest";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact />
+          </Route>
+          <Route exact path="/comest">
+            <Comest />
           </Route>
         </Switch>
       </Router>

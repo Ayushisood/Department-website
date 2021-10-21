@@ -1,8 +1,16 @@
 import React from "react";
-import "./Events.css";
+import styles from "./events.module.css";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
 function Events() {
-  return <div></div>;
+  return (
+    <div>
+      <Nav />
+
+      <Footer />
+    </div>
+  );
 }
 
 export default Events;
