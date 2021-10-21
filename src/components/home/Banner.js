@@ -1,22 +1,22 @@
 import TypingEffect from "../TypingEffect";
 import React from "react";
-import "./Banner.css";
+import styles from "./banner.module.css";
 
 function Banner() {
   return (
     <header
-      className=" banner"
+      className={`${styles["banner"]}`}
       style={{
         backgroundImage: `url("http://dsc.du.ac.in/wp-content/uploads/2021/07/Screenshot_2019-04-08-06-08-53-037_com.instagram.android.jpg")`,
         backgroundPosition: "center center",
       }}
     >
-      <div className="banner__contents ">
-        <h1 className="banner__title">
+      <div className={`${styles["banner__contents"]}`}>
+        <h1 className={`${styles["banner__title"]}`}>
           <TypingEffect text="COMPUTER SCIENCE DEPARTMENT" />
         </h1>
 
-        <h1 className="banner__description">
+        <h1 className={`${styles["banner__description"]}`}>
           The Computer Science Department represents the technological face of
           the college. Since its inception around three decades ago with
           B.Sc.(General) course, the department has evolved significantly in
@@ -26,7 +26,7 @@ function Banner() {
         </h1>
       </div>
 
-      <div className="banner--fadeBottom" />
+      <div className={`${styles["banner--fadeBottom"]}`} />
     </header>
   );
 }
