@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./crousel.module.css";
+// import styles from "./crousel.module.css";
 import Carousel from "react-bootstrap/Carousel";
 
 function Crousel() {

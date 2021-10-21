@@ -1,0 +1,21 @@
+.tabs-head{
+    padding: 30px 50px 0;
+    background: rgb(247, 242, 242);
+}
+
+.event-card{
+    box-shadow: 0 4px 6px darkgrey;
+    border-radius: 10px;
+}
+
+.tab-body{
+    background: white;
+}
+
+.event-card-list-item{
+    color: rgb(23, 134, 134);
+}
+
+.tab-color{
+    color: rgb(117, 3, 199);
+}
