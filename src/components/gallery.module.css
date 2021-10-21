@@ -1,0 +1,18 @@
+.heading-style {
+  text-align: center;
+  text-shadow: -1px 1px 2px #3b0449;
+  font-size: 5rem;
+  color: rgb(85, 7, 158);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container-size {
+  padding: 20px;
+  background-color: rgb(207, 168, 235);
+}
+.img-style {
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 4px 10px rgb(58, 3, 110);
+}
