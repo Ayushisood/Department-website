@@ -2,7 +2,7 @@ import React from 'react'
 import Card from "react-bootstrap/Card";
 // import Button from "react-bootstrap/Button";
 import ListGroup from "react-bootstrap/ListGroup";
-import styles from "../Events.module.css";
+import styles from "../events.module.css";
 
 function EventCard(props) {
     return (

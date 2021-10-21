@@ -1,21 +1,19 @@
 import React from "react";
-import "./Card.css";
+import styles from "./card.module.css";
+import Card from "react-bootstrap/Card";
 
-function Card(props) {
+function Cards(props) {
   return (
-    <div className="card__container">
-      <div className="card__media">
-        <img className="images" src={props.image} alt="" />
-      </div>
-
-      <div className="card__content">
-        <header className="card__header">
-          <h2>{props.heading}</h2>
-        </header>
-        <p className="card__text">{props.text}</p>
-      </div>
+    <div>
+      <Card className={`${styles["card"]}`}>
+        <Card.Img variant="top" src={props.image} />
+        <Card.Body className={`${styles["card-content"]}`}>
+          <Card.Title>{props.heading}</Card.Title>
+          <Card.Text>{props.text}</Card.Text>
+        </Card.Body>
+      </Card>
     </div>
   );
 }
 
-export default Card;
+export default Cards;

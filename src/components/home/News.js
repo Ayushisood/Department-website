@@ -1,10 +1,10 @@
 import React from "react";
-import "./News.css";
+import styles from "./news.module.css";
 
 function News() {
   return (
-    <div className="news-container">
-      <div class="news-wrap">
+    <div className={`${styles["news-container"]}`}>
+      <div className={`${styles["news-wrap"]}`}>
         <ul>
           <li>
             <img src="../hand.png" width="30px" />

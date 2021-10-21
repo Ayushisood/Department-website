@@ -1,0 +1,77 @@
+.faculty__container {
+  padding-top: 6vh;
+  background-color: rgba(247, 242, 242, 0.795);
+}
+
+/*rgb(202, 255, 237);*/
+.faculty__head {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  color: indigo;
+  padding: 20px 0;
+}
+
+.faculty__description {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: indigo;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.faculty__card_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px;
+  padding: 20px;
+}
+
+.faculty__card {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 2px 5px #3b0539;
+  border-radius: 10px;
+  background-color: rgb(206, 146, 248);
+}
+
+.faculty__card_img,
+.faculty__card_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  flex-direction: column;
+}
+
+.faculty__card_img img {
+  width: 110px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.faculty__card_details h2,
+p {
+  margin: 2% 0;
+}
+
+.faculty__card_details a {
+  text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 0 0 3px darkslategrey;
+  margin: 10px 0;
+  padding: 10px 15px;
+  color: rgb(22, 22, 22);
+}
+
+.faculty__card_details a:hover {
+  cursor: pointer;
+  background-color: indigo;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 2px 5px darkslategrey;
+}

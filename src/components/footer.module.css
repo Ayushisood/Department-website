@@ -43,7 +43,7 @@
   justify-content: center;
   margin-bottom: 0px;
 }
-.fa {
+.social {
   padding: 7px;
   font-size: 30px;
   width: 45px;
@@ -53,37 +53,31 @@
   margin-right: 20px;
 }
 
-.fa:hover {
+.social:hover {
   opacity: 0.7;
 }
-
-/* Facebook */
-.fa-facebook {
+.social-facebook {
   background: #3b5998;
   color: white;
   box-shadow: 5px 10px 8px #3b0539;
 }
 
-/* Twitter */
-.fa-twitter {
+.social-twitter {
   background: #55acee;
   color: white;
   box-shadow: 5px 10px 8px #3b0539;
 }
 
-/*google*/
-.fa-google {
+.social-google {
   background: #dd4b39;
   color: white;
   box-shadow: 5px 10px 8px #3b0539;
 }
-/*linkedin */
-.fa-linkedin {
+.social-linkedin {
   background: #007bb5;
   color: white;
   box-shadow: 5px 10px 8px #3b0539;
 }
-
 .copyright {
   font-weight: 700;
   color: #fff;

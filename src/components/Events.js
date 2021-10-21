@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Events.module.css";
+import styles from "./events.module.css";
 import Footer from "./Footer";
 import Nav from "./Nav";
 import Tabs from "react-bootstrap/Tabs";

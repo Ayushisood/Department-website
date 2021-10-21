@@ -6,19 +6,12 @@
   color: aliceblue;
   box-shadow: 5px 10px 8px #3b0539;
 }
-.images {
-  width: 543px;
-}
-
-.card__content {
-  padding: 30px;
-}
-
-.card__text {
-  padding: 15px;
-}
 
 .card__container:hover {
   transform: scale(1.035);
   cursor: pointer;
+}
+
+.card-content {
+  padding: 40px;
 }
