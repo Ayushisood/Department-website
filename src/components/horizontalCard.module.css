@@ -1,0 +1,48 @@
+.background-poster {
+  position: relative;
+
+  margin: 50px 0px;
+  animation: animateDetilScreen 1s;
+}
+
+@keyframes animateDetailScreen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.poster-content {
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  /*background: rgba(0, 0, 0, 0.7);*/
+  background: rgb(61, 2, 104);
+  border-radius: 20px;
+  max-width: 1300px;
+  box-shadow: 3px 4px 10px rgb(58, 3, 110);
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    max-height: none;
+  }
+}
+
+.poster-video {
+  width: 70%;
+}
+.poster-video img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+.poster-text {
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 40px;
+  color: aliceblue;
+}

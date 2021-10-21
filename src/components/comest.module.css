@@ -1,0 +1,26 @@
+.comest-container {
+  padding: 20px;
+}
+
+.comest-header {
+  margin-top: 50px;
+  text-align: center;
+  text-shadow: -1px 1px 2px #3b0449;
+  font-size: 3rem;
+  color: rgb(85, 7, 158);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.comest-header-1 {
+  margin-top: 50px;
+  text-align: center;
+
+  color: rgb(66, 6, 122);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.card-style {
+  margin: 40px 0px;
+}
