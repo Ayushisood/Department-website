@@ -5,8 +5,8 @@ import Banner from "./home/Banner";
 import Card from "./home/Card";
 import Footer from "./Footer";
 import Accordion from "react-bootstrap/Accordion";
-import Crousel from "./Crousel";
-import News from "./News";
+import Crousel from "./home/Crousel";
+import News from "./home/News";
 
 function Home() {
   return (

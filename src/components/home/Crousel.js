@@ -9,7 +9,7 @@ function Crousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
+            src="http://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
             alt="First slide"
             width="100%"
             height="600px"
@@ -22,7 +22,7 @@ function Crousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
+            src="http://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
             alt="Second slide"
             width="100%"
             height="600px"
@@ -36,7 +36,7 @@ function Crousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6nsh21YGkzMDpCL6mMDGElfzcjUgHSMIcsw&usqp=CAU"
             alt="Third slide"
             width="100%"
             height="600px"

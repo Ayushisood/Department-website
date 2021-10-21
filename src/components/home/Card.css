@@ -1,4 +1,4 @@
-.card {
+.card__container {
   background-color: indigo;
   margin: 40px;
   object-fit: cover;
@@ -7,7 +7,7 @@
   box-shadow: 5px 10px 8px #3b0539;
 }
 .images {
-  width: 550px;
+  width: 543px;
 }
 
 .card__content {
@@ -18,7 +18,7 @@
   padding: 15px;
 }
 
-.card:hover {
+.card__container:hover {
   transform: scale(1.035);
   cursor: pointer;
 }

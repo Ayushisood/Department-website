@@ -6,7 +6,7 @@ function Nav() {
   const history = useHistory();
 
   return (
-    <div className="nav">
+    <div className="nav__container">
       <div className="nav__contents">
         <img
           onClick={() => history.push("./")} //when clicks, render the homepage
@@ -16,19 +16,19 @@ function Nav() {
         ></img>
         <div className="nav__list">
           <Link className="nav__list_item" to="/">
-            <h3>Home</h3>
+            <h4>Home</h4>
           </Link>
           <Link className="nav__list_item" to="/faculty">
-            <h3>Faculty</h3>
+            <h4>Faculty</h4>
           </Link>
           <Link className="nav__list_item" to="/events">
-            <h3>Events</h3>
+            <h4>Events</h4>
           </Link>
           <Link className="nav__list_item" to="/gallery">
-            <h3>Gallery</h3>
+            <h4>Gallery</h4>
           </Link>
           <Link className="nav__list_item" to="/contact">
-            <h3>Contact</h3>
+            <h4>Contact</h4>
           </Link>
         </div>
 
