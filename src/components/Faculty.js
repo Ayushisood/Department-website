@@ -93,10 +93,16 @@ function Faculty() {
       <Nav />
 
       <div className={`${styles["faculty__container"]}`}>
-        <div class={`${styles["faculty__head"]}`}>Faculty members</div>
-        <div class={`${styles["faculty__description"]}`}>
-          Nisi commodo elit esse tempor pariatur sint. Nostrud est pariatur
-          laboris consequat. Aliquip sunt consectetur occaecat in.
+        <div style={{
+          background: `url("http://dsc.du.ac.in/wp-content/uploads/2021/07/Screenshot_2019-04-08-06-08-53-037_com.instagram.android.jpg")`,
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
+          height: "450px"
+        }}>
+          <div className={`${styles["faculty__head"]}`}>Faculty members</div>
+          <div className={`${styles["faculty__description"]}`}>
+            Professional and Proficient. Teachers of Computer Science Department of Dyal Singh College, University of Delhi.
+          </div>
         </div>
 
         <div class={`${styles["faculty__card_container"]}`}>

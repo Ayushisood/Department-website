@@ -1,0 +1,77 @@
+.facultyContainer {
+    background-color: rgba(247, 242, 242, 0.795);
+  }
+  
+  /*rgb(202, 255, 237);*/
+  .facultyHead {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(243, 226, 255);
+    padding: 35px 0 20px 0;
+  }
+  
+  .facultyDescription {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(243, 226, 255);
+    padding: 20px 0;
+    margin-bottom: 30px;
+  }
+  
+  .facultyCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+    padding: 20px;
+  }
+  
+  .facultyCard {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 2px 5px #3b0539;
+    border-radius: 10px;
+    background-color: rgb(206, 146, 248);
+  }
+  
+  .facultyCardImg,
+  .facultyCardDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    flex-direction: column;
+  }
+  
+  .facultyCardImg img {
+    width: 110px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .facultyCardDetails h2,
+  p {
+    margin: 2% 0;
+  }
+  
+  .facultyCardDetails a {
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 3px darkslategrey;
+    margin: 10px 0;
+    padding: 10px 15px;
+    color: rgb(22, 22, 22);
+  }
+  
+  .facultyCardDetails a:hover {
+    cursor: pointer;
+    background-color: indigo;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 2px 5px darkslategrey;
+  }
+  

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../faculty.module.css";
 
 function FacultyCard(props) {
+  
   return (
     <div class={`${styles["faculty__card"]}`}>
       <div class={`${styles["faculty__card_img"]}`}>
