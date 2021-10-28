@@ -6,6 +6,9 @@ import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Comest from "./components/Comest";
+import SignUp from "./components/admin/SignUp";
+import SignIn from "./components/admin/SignIn";
+import Dashboard from "./components/admin/Dashboard";
 
 function App() {
   return (
@@ -29,6 +32,15 @@ function App() {
           </Route>
           <Route exact path="/comest">
             <Comest />
+          </Route>
+          <Route exact path="/admin/signup">
+            <SignUp />
+          </Route>
+          <Route exact path="/admin/signin">
+            <SignIn />
+          </Route>
+          <Route exact path="/admin/dashboard">
+            <Dashboard />
           </Route>
         </Switch>
       </Router>

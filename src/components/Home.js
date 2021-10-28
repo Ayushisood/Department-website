@@ -5,7 +5,7 @@ import Banner from "./home/Banner";
 import Cards from "./home/Card";
 import Footer from "./Footer";
 import Accordion from "react-bootstrap/Accordion";
-import Crousel from "./home/Crousel";
+//import Crousel from "./home/Crousel";
 import News from "./home/News";
 
 function Home() {
@@ -15,9 +15,9 @@ function Home() {
       <Banner />
 
       <div className={`${styles["home-bg"]}`}>
-        <div className={`${styles["crousel-holder"]}`}>
+        {/* <div className={`${styles["crousel-holder"]}`}>
           <Crousel />
-        </div>
+        </div> */}
 
         <div className={`${styles["news-holder"]}`}>
           <h1>Latest News</h1>

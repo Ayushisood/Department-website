@@ -1,0 +1,36 @@
+.signUp {
+  background-color: #3b0539;
+  height: 100vh;
+  padding-top: 10%;
+}
+
+.signUp-container {
+  background: rgb(209, 169, 238);
+  align-content: center;
+  border-radius: 20px;
+  box-shadow: 3px 4px 10px rgb(36, 31, 41);
+  padding: 40px;
+  width: 60%;
+}
+.link-style {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.line-style {
+  border-bottom: 2px solid grey;
+}
+.h1-style {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.label-style {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.p-style {
+  color: cornflowerblue;
+}
