@@ -9,6 +9,8 @@ import Comest from "./components/Comest";
 import SignUp from "./components/admin/SignUp";
 import SignIn from "./components/admin/SignIn";
 import Dashboard from "./components/admin/Dashboard";
+import UploadEvents from "./components/admin/UploadEvents";
+import UploadNews from "./components/admin/UploadNews";
 
 function App() {
   return (
@@ -41,6 +43,12 @@ function App() {
           </Route>
           <Route exact path="/admin/dashboard">
             <Dashboard />
+          </Route>
+          <Route exact path="/admin/uploadnews">
+            <UploadNews />
+          </Route>
+          <Route exact path="/admin/uploadevents">
+            <UploadEvents />
           </Route>
         </Switch>
       </Router>

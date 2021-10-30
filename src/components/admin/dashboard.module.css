@@ -1,0 +1,33 @@
+.dashboard-container {
+  padding-top: 4%;
+  text-align: center;
+  background-color: rgb(206, 146, 248);
+  height: 100vh;
+}
+
+.dashboard-contents {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 30px;
+}
+.dashboard-admin-img {
+  border-radius: 50%;
+  box-shadow: 3px 7px 15px #3b0539;
+  height: 450px;
+  margin: 30px;
+}
+.dashboard-btn {
+  padding: 25px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: 700;
+  background-color: #690866;
+  color: #fff;
+}
+
+.dashboard-btn:hover {
+  background-color: #470545;
+}
