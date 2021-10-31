@@ -4,6 +4,8 @@ const successReducer = (state = false, action) => {
       return action.payload;
     case "SIGNIN_SUCCESS":
       return action.payload;
+    case "AUTHENTICATE_SUCCESS":
+      return action.payload;
     default:
       return state;
   }

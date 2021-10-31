@@ -8,7 +8,8 @@ const validateSignUp = (name, username, password) => async (dispatch) => {
         password: password
       }).toString();
   
-    const response = await axios.post("http://localhost:5000/admin/register", postBody, {
+    const response = await axios.post("http://localhost:5000/api/register", postBody, {
+        withCredentials: true,
         headers: { 
             "Content-Type": "application/x-www-form-urlencoded"
         }
