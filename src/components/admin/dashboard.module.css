@@ -1,8 +1,9 @@
 .dashboard-container {
-  padding-top: 4%;
+  padding: 4%;
   text-align: center;
   background-color: rgb(206, 146, 248);
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 .dashboard-contents {
@@ -14,7 +15,8 @@
 .dashboard-admin-img {
   border-radius: 50%;
   box-shadow: 3px 7px 15px #3b0539;
-  height: 450px;
+  width: auto;
+  height: 350px;
   margin: 30px;
 }
 .dashboard-btn {
