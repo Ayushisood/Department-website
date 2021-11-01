@@ -7,7 +7,6 @@ import validateSignIn from "../../redux/actions/validateSignIn";
 import { connect } from "react-redux";
 
 function SignIn(props) {
-
   function handleLogIn(event) {
     event.preventDefault();
     props.validateSignIn(
@@ -16,10 +15,8 @@ function SignIn(props) {
     );
   }
 
-  if(props.success){
-    return(
-      <Redirect to='/admin/dashboard' />
-    )
+  if (props.success) {
+    return <Redirect to="/admin/dashboard" />;
   } else {
     return (
       <div className={`${styles["signUp"]}`}>
@@ -53,7 +50,7 @@ function SignIn(props) {
               name="password"
             />
             <Form.Text>
-              <a href="#" className={`${styles["link-style"]} text-muted`}>
+              <a href="#" className={`${styles["link-style"]} `}>
                 Forgot password?
               </a>
             </Form.Text>

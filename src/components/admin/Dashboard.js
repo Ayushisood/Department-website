@@ -5,7 +5,10 @@ import styles from "./dashboard.module.css";
 function Dashboard() {
   return (
     <div className={`${styles["dashboard-container"]}`}>
-      <h1>Welcome to Admin Panel</h1>
+      <h1 className={`${styles["dashboard-heading"]}`}>
+        Welcome to Admin Panel
+      </h1>
+      <button className={`${styles["logOut-btn"]}`}>Log out</button>
       <img
         src="https://cdn.dribbble.com/users/1928646/screenshots/5781055/support.gif"
         className={`${styles["dashboard-admin-img"]}`}
