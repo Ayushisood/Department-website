@@ -9,7 +9,7 @@ import Home from "./components/Home";
 import Faculty from "./components/Faculty";
 import Events from "./components/Events";
 import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Comest from "./components/Comest";
 import SignUp from "./components/admin/SignUp";
 import SignIn from "./components/admin/SignIn";
@@ -41,9 +41,9 @@ function App(props) {
           <Route exact path="/gallery">
             <Gallery />
           </Route>
-          <Route exact path="/contact">
+          {/* <Route exact path="/contact">
             <Contact />
-          </Route>
+          </Route> */}
           <Route exact path="/comest">
             <Comest />
           </Route>

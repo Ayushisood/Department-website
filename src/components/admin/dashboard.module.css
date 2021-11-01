@@ -1,5 +1,5 @@
 .dashboard-container {
-  padding: 4%;
+  padding: 6%;
   text-align: center;
   background-color: rgb(206, 146, 248);
   min-height: 100vh;
@@ -32,4 +32,63 @@
 
 .dashboard-btn:hover {
   background-color: #470545;
+}
+
+.logOut-btn {
+  border-radius: 20px;
+
+  padding: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: 700;
+  background-color: #690866;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.logOut-btn:hover {
+  background-color: #470545;
+}
+
+@media (max-width: 600px) {
+  .dashboard-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+  }
+  .dashboard-btn {
+    margin-bottom: 30px;
+  }
+  .dashboard-admin-img {
+    border-radius: 50%;
+    box-shadow: 3px 7px 15px #3b0539;
+    width: 60%;
+    height: 350px;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 690px) {
+  .logOut-btn {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: 400;
+    background-color: #690866;
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+  }
+
+  .dashboard-heading {
+    margin-top: 20px;
+  }
 }

@@ -2,17 +2,33 @@
   min-height: 100vh;
   height: auto;
   background-color: rgb(206, 146, 248);
-  position: relative;
 }
 
 .addEvents {
   border-radius: 20px;
-  width: 40%;
+  width: 60%;
   box-shadow: 3px 4px 10px rgb(36, 31, 41);
   padding: 40px;
 
   position: absolute;
   top: 5%;
-  left: 30%;
+  left: 20%;
   background-color: #690866;
+}
+
+.addEvents-label {
+  font-size: large;
+  color: #fff;
+  margin-top: 5px;
+}
+
+@media (max-width: 850px) {
+  .addEvents {
+    padding: 15px;
+  }
+  .addEvents-label {
+    font-size: small;
+    color: #fff;
+    margin-top: 2px;
+  }
 }

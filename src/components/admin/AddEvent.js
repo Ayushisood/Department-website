@@ -22,11 +22,11 @@ function AddEvent() {
     console.log(event.target.file);
     setValidated(true);
   };
-  const changeHandler = (event) => {
-    const filess = URL.createObjectURL(event.target.files[0]);
-    setSelectedFile(filess);
-    setIsFilePicked(true);
-  };
+  // const changeHandler = (event) => {
+  //   const filess = URL.createObjectURL(event.target.files[0]);
+  //   setSelectedFile(filess);
+  //   setIsFilePicked(true);
+  // };
   //   const [selectedFile, setSelectedFile] = useState();
   //   const [isFilePicked, setIsFilePicked] = useState(false);
 
@@ -51,7 +51,9 @@ function AddEvent() {
         >
           <Row className="mb-6">
             <Form.Group as={Col} md="6">
-              <Form.Label>Event Title</Form.Label>
+              <Form.Label className={`${styles["addEvents-label"]}`}>
+                Event Title
+              </Form.Label>
               <Form.Control
                 required
                 type="text"
@@ -60,7 +62,9 @@ function AddEvent() {
               />
             </Form.Group>
             <Form.Group as={Col} md="6">
-              <Form.Label>Event Type</Form.Label>
+              <Form.Label className={`${styles["addEvents-label"]}`}>
+                Event Type
+              </Form.Label>
               <Form.Control
                 required
                 type="text"
@@ -70,7 +74,9 @@ function AddEvent() {
             </Form.Group>
           </Row>
           <Form.Group as={Col}>
-            <Form.Label>Speaker Name</Form.Label>
+            <Form.Label className={`${styles["addEvents-label"]}`}>
+              Speaker Name
+            </Form.Label>
             <Form.Control
               required
               type="text"
@@ -78,23 +84,31 @@ function AddEvent() {
               name="speaker"
             />
           </Form.Group>
-          <Form.Group as={Col}>
-            <Form.Label>Event Date</Form.Label>
-            <Form.Control required type="date" name="date" />
-          </Form.Group>
-          <Form.Group as={Col}>
-            <Form.Label>No of Days</Form.Label>
-            <Form.Control
-              required
-              type="number"
-              name="days"
-              placeholder="Enter no of days"
-            />
-          </Form.Group>
+          <Row className="mb-6">
+            <Form.Group as={Col} md="6">
+              <Form.Label className={`${styles["addEvents-label"]}`}>
+                Event Date
+              </Form.Label>
+              <Form.Control required type="date" name="date" />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label className={`${styles["addEvents-label"]}`}>
+                No of Days
+              </Form.Label>
+              <Form.Control
+                required
+                type="number"
+                name="days"
+                placeholder="Enter no of days"
+              />
+            </Form.Group>
+          </Row>
 
           <Row className="mb-6">
             <Form.Group as={Col} md="6">
-              <Form.Label>Timing(Hours:Minutes) : From</Form.Label>
+              <Form.Label className={`${styles["addEvents-label"]}`}>
+                Time(Hours:Minutes) : From
+              </Form.Label>
               <Form.Control
                 type="time"
                 placeholder="Hours : Minutes"
@@ -103,7 +117,9 @@ function AddEvent() {
               />
             </Form.Group>
             <Form.Group as={Col} md="6">
-              <Form.Label>To</Form.Label>
+              <Form.Label className={`${styles["addEvents-label"]}`}>
+                Time(Hours:Minutes) : To
+              </Form.Label>
               <Form.Control
                 type="time"
                 placeholder="Hours : Minutes"
@@ -113,7 +129,9 @@ function AddEvent() {
             </Form.Group>
           </Row>
           <Form.Group as={Col}>
-            <Form.Label>Event Description</Form.Label>
+            <Form.Label className={`${styles["addEvents-label"]}`}>
+              Event Description
+            </Form.Label>
             <Form.Control
               required
               type="text"
@@ -122,7 +140,9 @@ function AddEvent() {
             />
           </Form.Group>
           <Form.Group as={Col}>
-            <Form.Label>Event Link</Form.Label>
+            <Form.Label className={`${styles["addEvents-label"]}`}>
+              Event Link
+            </Form.Label>
             <Form.Control
               required
               type="text"
@@ -131,22 +151,20 @@ function AddEvent() {
             />
           </Form.Group>
           <Form.Group controlId="formFileLg" className="mb-3">
-            <Form.Label>upload Event Image/Poster</Form.Label>
+            <Form.Label className={`${styles["addEvents-label"]}`}>
+              upload Event Image/Poster
+            </Form.Label>
             <Form.Control
               type="file"
               size="lg"
               name="file"
-              onChange={changeHandler}
+              // onChange={changeHandler}
             />
           </Form.Group>
           <Button type="submit">Submit form</Button>
         </Form>
-        {/* <input type="file" name="file" onChange={changeHandler} />
-        <div>
-          <button onClick={handleSubmission}>Submit</button>
-        </div> */}
       </div>
-      {isFilePicked && <img src={selectedFile} width="100px" />}
+      {/* {isFilePicked && <img src={selectedFile} width="100px" />} */}
     </div>
   );
 }
