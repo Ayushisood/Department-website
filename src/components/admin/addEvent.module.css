@@ -1,6 +1,7 @@
 .addEvent-container {
   min-height: 100vh;
   height: auto;
+  padding: 4%;
   background-color: rgb(206, 146, 248);
 }
 

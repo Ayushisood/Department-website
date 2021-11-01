@@ -8,10 +8,22 @@ import Button from "react-bootstrap/Button";
 
 function AddEvent() {
   const [validated, setValidated] = useState(false);
-  const [imgFile, setImg] = useState("");
+  //const [imgFile, setImg] = useState("");
+  function extractFilename(path) {
+    if (path.substr(0, 12) === "C:\\fakepath\\")
+      return path.substr(12); // modern browser
+    var x;
+    x = path.lastIndexOf('/');
+    if (x >= 0) // Unix-based path
+      return path.substr(x+1);
+    x = path.lastIndexOf('\\');
+    if (x >= 0) // Windows-based path
+      return path.substr(x+1);
+    return path; // just the filename
+  }
 
   const handleSubmit = (event) => {
-    const form = event.currentTarget;
+    //const form = event.currentTarget;
     event.preventDefault();
     // if (form.checkValidity() === false) {
     //   event.preventDefault();
@@ -19,7 +31,8 @@ function AddEvent() {
     // }
     // setImg(event.target.files[0]);
     // console.log(event.target.file.value);
-    console.log(event.target.file);
+    const fileName = extractFilename(event.target.file.value);
+    console.log(event.target.timeFrom.value);
     setValidated(true);
   };
   // const changeHandler = (event) => {
@@ -112,7 +125,7 @@ function AddEvent() {
               <Form.Control
                 type="time"
                 placeholder="Hours : Minutes"
-                name="time-from"
+                name="timeFrom"
                 required
               />
             </Form.Group>
@@ -123,7 +136,7 @@ function AddEvent() {
               <Form.Control
                 type="time"
                 placeholder="Hours : Minutes"
-                name="time-to"
+                name="timeTo"
                 required
               />
             </Form.Group>
