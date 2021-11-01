@@ -7,13 +7,10 @@ import { connect } from "react-redux";
 function Dashboard(props) {
   function handleLogOut(event) {
     event.preventDefault();
-    props.validateLogOut(
-      event.target.username.value,
-      event.target.password.value
-    );
+    props.validateLogOut();
   }
 
-  if (props.success) {
+  if (!props.success) {
     return <Redirect to="/admin/signin" />;
   } else {
     return (
