@@ -65,7 +65,7 @@ function App(props) {
             {props.success ? <UploadEvents /> : <Redirect to="/admin/signup" />}
           </Route>
           <Route exact path="/admin/uploadNewEvent">
-            <AddEvent />
+            {props.success ? <AddEvent /> : <Redirect to="/admin/signup" />}
           </Route>
         </Switch>
       </Router>
