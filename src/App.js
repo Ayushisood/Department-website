@@ -11,6 +11,7 @@ import SignIn from "./components/admin/SignIn";
 import Dashboard from "./components/admin/Dashboard";
 import UploadEvents from "./components/admin/UploadEvents";
 import UploadNews from "./components/admin/UploadNews";
+import AddEvent from "./components/admin/AddEvent";
 
 function App() {
   return (
@@ -49,6 +50,9 @@ function App() {
           </Route>
           <Route exact path="/admin/uploadevents">
             <UploadEvents />
+          </Route>
+          <Route exact path="/admin/uploadNewEvent">
+            <AddEvent />
           </Route>
         </Switch>
       </Router>
