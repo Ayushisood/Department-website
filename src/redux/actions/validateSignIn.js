@@ -7,15 +7,16 @@ const validateSignIn = (username, password) => async (dispatch) => {
   }).toString();
 
   const response = await axios.post(
-    "http://localhost:5000/admin/login",
+    "http://localhost:5000/api/login",
     postBody,
     {
+      withCredentials: true,
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
     }
   );
-  console.log(response.data);
+  console.log("Sign-in response : ", response.data);
 
   dispatch({
     type: "SIGNIN_SUCCESS",

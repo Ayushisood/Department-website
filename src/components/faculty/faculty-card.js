@@ -11,7 +11,7 @@ function FacultyCard(props) {
       <div class={`${styles["faculty__card_details"]}`}>
         <h2>{props.name}</h2>
         <p>{props.desg}</p>
-        <a href={props.profLink}>View more</a>
+        <a href={props.profLink} target='_blank'>View more</a>
       </div>
     </div>
   );
