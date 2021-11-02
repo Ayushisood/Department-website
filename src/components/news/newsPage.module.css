@@ -1,0 +1,12 @@
+.news-card {
+  background-color: indigo;
+  margin: 40px;
+  object-fit: cover;
+  width: 550px;
+  color: aliceblue;
+  box-shadow: 5px 10px 8px #3b0539;
+}
+
+.news-card-content {
+  padding: 40px;
+}
