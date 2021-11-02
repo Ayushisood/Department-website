@@ -16,6 +16,7 @@ import SignIn from "./components/admin/SignIn";
 import Dashboard from "./components/admin/Dashboard";
 import UploadEvents from "./components/admin/UploadEvents";
 import UploadNews from "./components/admin/UploadNews";
+import ResetPassword from "./components/admin/ResetPassword";
 import AddEvent from "./components/admin/AddEvent";
 import { connect } from "react-redux";
 import authenticateUser from "./redux/actions/authenticateUser";
@@ -54,6 +55,9 @@ function App(props) {
           </Route>
           <Route exact path="/admin/signin">
             <SignIn />
+          </Route>
+          <Route exact path="/admin/resetPassword">
+            <ResetPassword />
           </Route>
           <Route exact path="/admin/dashboard">
             {props.success ? <Dashboard /> : <Redirect to="/admin/signup" />}

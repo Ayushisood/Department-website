@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./dashboard.module.css";
 import validateLogOut from "../../redux/actions/validateLogOut";
 import { connect } from "react-redux";
+import { Redirect } from "react-router-dom";
 
 function Dashboard(props) {
   function handleLogOut(event) {
