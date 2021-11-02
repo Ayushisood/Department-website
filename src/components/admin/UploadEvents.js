@@ -9,11 +9,11 @@ function UploadEvents() {
         <Link to="/admin/uploadNewEvent">
           <button className={`${styles["upload-btn"]}`}>Add new event</button>
         </Link>
-        <Link to="/admin/updateEvent">
+        {/* <Link to="/admin/updateEvent">
           <button className={`${styles["upload-btn"]}`}>
             Update existing event
           </button>
-        </Link>
+        </Link> */}
         <Link to="/admin/deleteEvent">
           <button className={`${styles["upload-btn"]}`}>Delete event</button>
         </Link>
