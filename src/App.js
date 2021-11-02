@@ -19,6 +19,7 @@ import UploadNews from "./components/admin/UploadNews";
 import ResetPassword from "./components/admin/ResetPassword";
 import AddEvent from "./components/admin/AddEvent";
 import AddNews from "./components/admin/AddNews.js";
+import NewsPage from "./components/news/NewsPage";
 import { connect } from "react-redux";
 import authenticateUser from "./redux/actions/authenticateUser";
 
@@ -43,11 +44,13 @@ function App(props) {
           <Route exact path="/gallery">
             <Gallery />
           </Route>
-          {/* <Route exact path="/contact">
-            <Contact />
-          </Route> */}
+
           <Route exact path="/comest">
             <Comest />
+          </Route>
+
+          <Route exact path="/news/:newsID">
+            <NewsPage />
           </Route>
 
           {/* Admin routes */}
