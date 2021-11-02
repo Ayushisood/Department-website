@@ -16,21 +16,25 @@ function AddEvent() {
     //const form = event.currentTarget;
     event.preventDefault();
     const eventData = new FormData();
-    eventData.append('title', event.target.title.value);
-    eventData.append('type', event.target.type.value);
-    eventData.append('speaker', event.target.speaker.value);
-    eventData.append('date', event.target.date.value);
-    eventData.append('days', event.target.days.value);
-    eventData.append('timeFrom', event.target.timeFrom.value);
-    eventData.append('timeTo', event.target.timeTo.value);
-    eventData.append('description', event.target.description.value);
-    eventData.append('link', event.target.link.value);
-    eventData.append('file', newFile);
-  
-    const res = await axios.post("http://localhost:5000/api/events",eventData,{
-      withCredentials: true
-    });
-    if(res.data.inserted){  
+    eventData.append("title", event.target.title.value);
+    // eventData.append('type', event.target.type.value);
+    eventData.append("speaker", event.target.speaker.value);
+    eventData.append("date", event.target.date.value);
+    eventData.append("days", event.target.days.value);
+    eventData.append("timeFrom", event.target.timeFrom.value);
+    eventData.append("timeTo", event.target.timeTo.value);
+    eventData.append("description", event.target.description.value);
+    eventData.append("link", event.target.link.value);
+    eventData.append("file", newFile);
+
+    const res = await axios.post(
+      "http://localhost:5000/api/events",
+      eventData,
+      {
+        withCredentials: true,
+      }
+    );
+    if (res.data.inserted) {
       alert(res.data.msg);
       setValidated(true);
     } else {
@@ -44,10 +48,8 @@ function AddEvent() {
     setNewFile(tempFile);
   };
 
-  if(validated){
-    return (
-      <Redirect to='/admin/dashboard' />
-    )
+  if (validated) {
+    return <Redirect to="/admin/dashboard" />;
   } else {
     return (
       <div className={`${styles["addEvent-container"]}`}>
@@ -70,7 +72,7 @@ function AddEvent() {
                   name="title"
                 />
               </Form.Group>
-              <Form.Group as={Col} md="6">
+              {/* <Form.Group as={Col} md="6">
                 <Form.Label className={`${styles["addEvents-label"]}`}>
                   Event Type
                 </Form.Label>
@@ -80,19 +82,20 @@ function AddEvent() {
                   placeholder="Type of event"
                   name="type"
                 />
+              </Form.Group> */}
+              <Form.Group as={Col} md="6">
+                <Form.Label className={`${styles["addEvents-label"]}`}>
+                  Speaker Name
+                </Form.Label>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Speaker Name"
+                  name="speaker"
+                />
               </Form.Group>
             </Row>
-            <Form.Group as={Col}>
-              <Form.Label className={`${styles["addEvents-label"]}`}>
-                Speaker Name
-              </Form.Label>
-              <Form.Control
-                required
-                type="text"
-                placeholder="Speaker Name"
-                name="speaker"
-              />
-            </Form.Group>
+
             <Row className="mb-6">
               <Form.Group as={Col} md="6">
                 <Form.Label className={`${styles["addEvents-label"]}`}>
@@ -100,7 +103,7 @@ function AddEvent() {
                 </Form.Label>
                 <Form.Control required type="date" name="date" />
               </Form.Group>
-              <Form.Group as={Col}>
+              <Form.Group as={Col} md="6">
                 <Form.Label className={`${styles["addEvents-label"]}`}>
                   No of Days
                 </Form.Label>

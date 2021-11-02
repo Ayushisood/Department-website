@@ -35,7 +35,18 @@
 .input__btn:hover {
   cursor: pointer;
 }
+.contact {
+  color: #fff;
+}
 
+.contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact a:hover {
+  color: rgb(212, 203, 203);
+}
 .icons {
   margin: 19px;
   display: flex;

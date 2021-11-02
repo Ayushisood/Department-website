@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./news.module.css";
+import getNews from "../../redux/actions/getNews";
+import { connect } from "react-redux";
 
-function News() {
+function News(props) {
+  useEffect(() => {
+    props.getNews();
+  }, []);
+
   return (
     <div className={`${styles["news-container"]}`}>
       <div className={`${styles["news-wrap"]}`}>
         <ul>
-          <li>
-            <img src="../hand.png" width="30px" />
-            <a>first link</a>
-          </li>
-          <li>
+          {props.news &&
+            props.news.map((newNews) => {
+              return (
+                <li>
+                  <img src="../hand.png" width="30px" />
+                  <a>{newNews}</a>
+                </li>
+              );
+            })}
+
+          {/* <li>
             <img src="../hand.png" width="30px" />
             <a>second link</a>
           </li>
@@ -33,27 +45,15 @@ function News() {
           <li>
             <img src="../hand.png" width="30px" />
             <a>seventh link</a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
   );
 }
 
-export default News;
+const mapStateToProps = (state) => {
+  return { news: state.news };
+};
 
-/*<div id=slideset1>
-<div>
-<h1>This is slide 1</h1>
-<p>Slide 1
-<p>It has a <a href="./">link.</a>
-</div>
-<div>
-<h1>This is the second slide</h1>
-<p>Second slide
-</div>
-<div>
-<h1>This is slide number 3</h1>
-<p>Slide number 3
-</div>
-</div>*/
+export default connect(mapStateToProps, { getNews })(News);
