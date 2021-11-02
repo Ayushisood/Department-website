@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./signup.module.css";
 import Form from "react-bootstrap/Form";
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import validateSignIn from "../../redux/actions/validateSignIn";
 import { connect } from "react-redux";
@@ -50,9 +50,16 @@ function SignIn(props) {
               name="password"
             />
             <Form.Text>
-              <a href="#" className={`${styles["link-style"]} `}>
+              <Link
+                className={`${styles["link-style"]} `}
+                to="/admin/resetPassword"
+              >
+                {" "}
                 Forgot password?
-              </a>
+              </Link>
+              {/* <a href="#" className={`${styles["link-style"]} `}>
+                Forgot password?
+              </a> */}
             </Form.Text>
           </Form.Group>
 
