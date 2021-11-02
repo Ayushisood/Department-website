@@ -17,7 +17,7 @@ function News(props) {
               return (
                 <li>
                   <img src="../hand.png" width="30px" />
-                  <a>{newNews}</a>
+                  <a>{newNews.title}</a>
                 </li>
               );
             })}
