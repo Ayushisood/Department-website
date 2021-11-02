@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./news.module.css";
 import getNews from "../../redux/actions/getNews";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 function News(props) {
   useEffect(() => {
@@ -17,35 +18,10 @@ function News(props) {
               return (
                 <li>
                   <img src="../hand.png" width="30px" />
-                  <a>{newNews}</a>
+                  <Link to={`/news/${newNews_id}`}>{newNews}</Link>
                 </li>
               );
             })}
-
-          {/* <li>
-            <img src="../hand.png" width="30px" />
-            <a>second link</a>
-          </li>
-          <li>
-            <img src="../hand.png" width="30px" />
-            <a>third link</a>
-          </li>
-          <li>
-            <img src="../hand.png" width="30px" />
-            <a>fourth link</a>
-          </li>
-          <li>
-            <img src="../hand.png" width="30px" />
-            <a>fifth link</a>
-          </li>
-          <li>
-            <img src="../hand.png" width="30px" />
-            <a>sixth link</a>
-          </li>
-          <li>
-            <img src="../hand.png" width="30px" />
-            <a>seventh link</a>
-          </li> */}
         </ul>
       </div>
     </div>
