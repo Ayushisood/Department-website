@@ -20,7 +20,8 @@ function Events(props) {
       <Tabs defaultActiveKey="upcoming" id="uncontrolled-tab" className={`${styles["tabs-head"]}`}>
         <Tab eventKey="upcoming" title="Upcoming Events" className={`${styles["tab-body"]} p-4`} tabClassName={`${styles["tab-color"]}`}>
           {props.events && props.events.map((event) => {
-            return (<EventCard 
+            return (<EventCard
+              key={event._id}
               eventTitle={event.title}
               info1={event.info.speaker}
               info2={event.info.date}
