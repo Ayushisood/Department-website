@@ -7,7 +7,7 @@ import styles from "../events.module.css";
 function EventCard(props) {
     return (
     <Card className={`${styles["event-card"]} w-75 mx-auto my-4`}>
-        <Card.Img variant="top" src={props.cardImg} style={{ height: "400px" }} />
+        <Card.Img variant="top" src={props.cardImg} style={{ height: "auto" }} />
         <Card.Body>
             <Card.Title>{props.eventTitle}</Card.Title>
         </Card.Body>
@@ -15,6 +15,7 @@ function EventCard(props) {
                 {props.info1 !== null && <ListGroup.Item className={`${styles["event-card-list-item"]}`}><b>Speaker : </b>{props.info1}</ListGroup.Item>}
                 <ListGroup.Item className={`${styles["event-card-list-item"]}`}><b>Date : </b>{props.info2}</ListGroup.Item>
                 <ListGroup.Item className={`${styles["event-card-list-item"]}`}><b>Timings : </b>{props.info3}</ListGroup.Item>
+                <ListGroup.Item className={`${styles["event-card-list-item"]}`}><b>No. of Days : </b>{props.info4}</ListGroup.Item>
             </ListGroup>
         <Card.Body>  
             <Card.Text>{props.eventText}</Card.Text>
