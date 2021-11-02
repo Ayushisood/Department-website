@@ -10,7 +10,7 @@ function ResetPassword() {
   const handleResetPassword = async (event) => {
     event.preventDefault();
     const postBody = new URLSearchParams({
-      username: event.target.username,
+      username: event.target.username.value,
     }).toString();
 
     const response = await axios.post(
