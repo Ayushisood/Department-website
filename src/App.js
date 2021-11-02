@@ -18,6 +18,7 @@ import UploadEvents from "./components/admin/UploadEvents";
 import UploadNews from "./components/admin/UploadNews";
 import ResetPassword from "./components/admin/ResetPassword";
 import AddEvent from "./components/admin/AddEvent";
+import AddNews from "./components/admin/AddNews.js";
 import { connect } from "react-redux";
 import authenticateUser from "./redux/actions/authenticateUser";
 
@@ -70,6 +71,9 @@ function App(props) {
           </Route>
           <Route exact path="/admin/uploadNewEvent">
             {props.success ? <AddEvent /> : <Redirect to="/admin/signup" />}
+          </Route>
+          <Route exact path="/admin/addNews">
+            {props.success ? <AddNews /> : <Redirect to="/admin/signup" />}
           </Route>
         </Switch>
       </Router>

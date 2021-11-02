@@ -5,13 +5,16 @@ function Footer() {
   return (
     <div className={`${styles["footer"]}`}>
       <form className={`${styles["form__contents"]}`}>
-        <input
+        {/* <input
           placeholder="Enter Email"
           type="email"
           required
           className={`${styles["input__field"]}`}
         />
-        <button className={`${styles["input__btn"]}`}>Submit</button>
+        <button className={`${styles["input__btn"]}`}>Submit</button> */}
+        <h3 className={`${styles["contact"]}`}>
+          Contact : <a href="http://dsc.du.ac.in/">Click here</a>
+        </h3>
         <div className={`${styles["icons"]}`}>
           <a
             href="#"
