@@ -1,8 +1,8 @@
 .news-card {
   background-color: indigo;
-  margin: 40px;
+  margin: 40px auto;
   object-fit: cover;
-  width: 550px;
+  width: 60vw;
   color: aliceblue;
   box-shadow: 5px 10px 8px #3b0539;
 }

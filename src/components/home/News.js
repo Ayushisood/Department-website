@@ -18,7 +18,7 @@ function News(props) {
               return (
                 <li>
                   <img src="../hand.png" width="30px" />
-                  <Link to={`/news/${newNews_id}`}>{newNews}</Link>
+                  <Link to={`/news/${newNews._id}`}>{newNews.title}</Link>
                 </li>
               );
             })}
