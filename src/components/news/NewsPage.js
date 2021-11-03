@@ -36,7 +36,7 @@ function NewsPage() {
             </Card.Link>
             <br />
             <Card.Text>File Associated: </Card.Text>
-            <Card.Link href={newsItem.links.filePath} target="_blank">
+            <Card.Link href={`http://localhost:5000/${newsItem.links.filePath}`} target="_blank">
               {newsItem.links.filePath}
             </Card.Link>
           </Card.Body>
