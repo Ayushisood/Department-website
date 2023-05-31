@@ -26,6 +26,7 @@ function Dashboard(props) {
           Log out
         </button>
         <img
+          alt="gif"
           src="https://cdn.dribbble.com/users/1928646/screenshots/5781055/support.gif"
           className={`${styles["dashboard-admin-img"]}`}
         />
