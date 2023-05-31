@@ -26,7 +26,7 @@ import authenticateUser from "./redux/actions/authenticateUser";
 function App(props) {
   useEffect(() => {
     props.authenticateUser();
-  });
+  }, [props]);
 
   return (
     <div style={{ background: "rgba(247, 242, 242, 0.795)" }}>
