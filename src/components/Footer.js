@@ -17,19 +17,19 @@ function Footer() {
         </h3>
         <div className={`${styles["icons"]}`}>
           <a
-            href="#"
+            href="https://www.facebook.com"
             className={`fa fa-facebook ${styles["social"]} ${styles["social-facebook"]}`}
           ></a>
           <a
-            href="#"
+            href="https://www.twitter.com"
             className={`fa fa-twitter ${styles["social"]} ${styles["social-twitter"]}`}
           ></a>
           <a
-            href="#"
+            href="https://www.google.com"
             className={`fa fa-google ${styles["social"]} ${styles["social-google"]}`}
           ></a>
           <a
-            href="#"
+            href="https://www.linkedin.com"
             className={`fa fa-linkedin ${styles["social"]} ${styles["social-linkedin"]}`}
           ></a>
         </div>

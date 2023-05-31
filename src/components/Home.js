@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import Banner from "./home/Banner";
 import Cards from "./home/Card";
 import Footer from "./Footer";
-import Accordion from "react-bootstrap/Accordion";
+// import Accordion from "react-bootstrap/Accordion";
 //import Crousel from "./home/Crousel";
 import News from "./home/News";
 

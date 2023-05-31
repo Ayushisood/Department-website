@@ -12,7 +12,7 @@ function Events(props) {
 
   useEffect(() => {
     props.getEvents();
-  }, []);
+  });
 
   return (
     <div>

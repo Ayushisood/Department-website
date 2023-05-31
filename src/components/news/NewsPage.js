@@ -17,7 +17,7 @@ function NewsPage() {
       setNewsItem(res.data);
     }
     fetchNews();
-  }, []);
+  });
 
   return (
     <div>

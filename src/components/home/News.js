@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function News(props) {
   useEffect(() => {
     props.getNews();
-  }, []);
+  });
 
   return (
     <div className={`${styles["news-container"]}`}>
@@ -17,7 +17,7 @@ function News(props) {
             props.news.map((newNews) => {
               return (
                 <li>
-                  <img src="../hand.png" width="30px" />
+                  <img src="../hand.png" width="30px" alt="hand" />
                   <Link to={`/news/${newNews._id}`}>{newNews.title}</Link>
                 </li>
               );
