@@ -19,18 +19,22 @@ function Footer() {
           <a
             href="https://www.facebook.com"
             className={`fa fa-facebook ${styles["social"]} ${styles["social-facebook"]}`}
+            dangerouslySetInnerHTML={{ __html: '' }}
           ></a>
           <a
             href="https://www.twitter.com"
             className={`fa fa-twitter ${styles["social"]} ${styles["social-twitter"]}`}
+            dangerouslySetInnerHTML={{ __html: '' }}
           ></a>
           <a
             href="https://www.google.com"
             className={`fa fa-google ${styles["social"]} ${styles["social-google"]}`}
+            dangerouslySetInnerHTML={{ __html: '' }}
           ></a>
           <a
             href="https://www.linkedin.com"
             className={`fa fa-linkedin ${styles["social"]} ${styles["social-linkedin"]}`}
+            dangerouslySetInnerHTML={{ __html: '' }}
           ></a>
         </div>
         <p className={`${styles["copyright"]}`}>&copy; 2021 Department of CS</p>
