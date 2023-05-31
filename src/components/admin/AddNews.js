@@ -24,7 +24,7 @@ function AddNews() {
     eventData.append("date", event.target.date.value);
     eventData.append("newFile", newFile);
 
-    const res = await axios.post("http://localhost:5000/api/news", eventData, {
+    const res = await axios.post("https://department-server-a76gwptdr-masterrachit777.vercel.app/api/news", eventData, {
       withCredentials: true,
     });
     if (res.data.inserted) {
@@ -114,7 +114,7 @@ function AddNews() {
             </Form.Group>
             <Form.Group controlId="formFileLg" className="mb-3">
               <Form.Label className={`${styles["addEvents-label"]}`}>
-                upload file(if any)
+                upload file*
               </Form.Label>
               <Form.Control
                 type="file"

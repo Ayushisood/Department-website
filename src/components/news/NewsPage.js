@@ -12,7 +12,7 @@ function NewsPage() {
 
   useEffect(() => {
     async function fetchNews() {
-      const res = await axios.get(`http://localhost:5000/api/news/${newsID}`);
+      const res = await axios.get(`https://department-server-a76gwptdr-masterrachit777.vercel.app/api/news/${newsID}`);
       console.log(res.data);
       setNewsItem(res.data);
     }
@@ -36,7 +36,7 @@ function NewsPage() {
             </Card.Link>
             <br />
             <Card.Text>File Associated: </Card.Text>
-            <Card.Link href={`http://localhost:5000/${newsItem.links.filePath}`} target="_blank">
+            <Card.Link href={`https://department-server-a76gwptdr-masterrachit777.vercel.app/${newsItem.links.filePath}`} target="_blank">
               {newsItem.links.filePath}
             </Card.Link>
           </Card.Body>

@@ -94,10 +94,12 @@ function Faculty() {
 
       <div className={`${styles["faculty__container"]}`}>
         <div style={{
-          background: `url("http://dsc.du.ac.in/wp-content/uploads/2021/07/Screenshot_2019-04-08-06-08-53-037_com.instagram.android.jpg")`,
+          background: `url("https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2020/12/12/istock-499845971-926316-1607716606.jpg?itok=H-UxQpBT")`,
           backgroundPosition: "center center",
           backgroundSize: "cover",
-          height: "450px"
+          backgroundRepeat: "no-repeat",
+          height: "450px",
+          width: "100%",
         }}>
           <div className={`${styles["faculty__head"]}`}>Faculty members</div>
           <div className={`${styles["faculty__description"]}`}>

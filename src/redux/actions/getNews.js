@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const getNews = () => async (dispatch) => {
-  const res = await axios.get("http://localhost:5000/api/news");
+  const res = await axios.get("https://department-server-a76gwptdr-masterrachit777.vercel.app/api/news");
   console.log(res.data);
 
   dispatch({

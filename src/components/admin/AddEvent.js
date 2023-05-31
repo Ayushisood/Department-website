@@ -28,7 +28,7 @@ function AddEvent() {
     eventData.append("file", newFile);
 
     const res = await axios.post(
-      "http://localhost:5000/api/events",
+      "https://department-server-a76gwptdr-masterrachit777.vercel.app/api/events",
       eventData,
       {
         withCredentials: true,
