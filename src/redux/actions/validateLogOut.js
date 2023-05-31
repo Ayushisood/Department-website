@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const validateLogOut = () => async (dispatch) => {
-  const response = await axios.get("http://localhost:5000/api/logout", {
+  const response = await axios.get("https://department-server-a76gwptdr-masterrachit777.vercel.app/api/logout", {
     withCredentials: true,
   });
   console.log(response.data);

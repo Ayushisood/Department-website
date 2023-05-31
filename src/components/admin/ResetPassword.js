@@ -15,7 +15,7 @@ function ResetPassword() {
     }).toString();
 
     const response = await axios.post(
-      "http://localhost:5000/api/reset-password",
+      "https://department-server-a76gwptdr-masterrachit777.vercel.app/api/reset-password",
       postBody,
       {
         withCredentials: true,
