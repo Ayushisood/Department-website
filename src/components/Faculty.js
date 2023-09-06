@@ -94,7 +94,7 @@ function Faculty() {
 
       <div className={`${styles["faculty__container"]}`}>
         <div style={{
-          background: `url("https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2020/12/12/istock-499845971-926316-1607716606.jpg?itok=H-UxQpBT")`,
+          background: `url("https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-teachers-day-poster-background-blackboard-teacher-image_12766.jpg")`,
           backgroundPosition: "center center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
