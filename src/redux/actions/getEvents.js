@@ -2,7 +2,7 @@ import axios from "axios";
 
 const getEvents = () => async (dispatch) => {
 
-    const res = await axios.get("https://department-server-a76gwptdr-masterrachit777.vercel.app/api/events");
+    const res = await axios.get("https://department-server.vercel.app/api/events");
     console.log(res.data);
 
     dispatch({
