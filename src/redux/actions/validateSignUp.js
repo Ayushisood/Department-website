@@ -8,7 +8,7 @@ const validateSignUp = (name, username, password) => async (dispatch) => {
         password: password
       }).toString();
   
-    const response = await axios.post("https://department-server-a76gwptdr-masterrachit777.vercel.app/api/register", postBody, {
+    const response = await axios.post("https://department-server.vercel.app/api/register", postBody, {
         withCredentials: true,
         headers: { 
             "Content-Type": "application/x-www-form-urlencoded"
