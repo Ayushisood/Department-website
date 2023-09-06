@@ -12,7 +12,7 @@ function NewsPage() {
 
   useEffect(() => {
     async function fetchNews() {
-      const res = await axios.get(`https://department-server-a76gwptdr-masterrachit777.vercel.app/api/news/${newsID}`);
+      const res = await axios.get(`https://department-server.vercel.app/api/news/${newsID}`);
       console.log(res.data);
       setNewsItem(res.data);
     }
