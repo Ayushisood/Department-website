@@ -24,7 +24,7 @@ function AddNews() {
     eventData.append("date", event.target.date.value);
     eventData.append("newFile", newFile);
 
-    const res = await axios.post("https://department-server-a76gwptdr-masterrachit777.vercel.app/api/news", eventData, {
+    const res = await axios.post("https://department-server.vercel.app/api/news", eventData, {
       withCredentials: true,
     });
     if (res.data.inserted) {
