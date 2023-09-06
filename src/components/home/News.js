@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function News(props) {
   useEffect(() => {
     props.getNews();
-  });
+  }, []);
 
   return (
     <div className={`${styles["news-container"]}`}>
