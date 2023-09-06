@@ -60,7 +60,7 @@ function Gallery() {
 
               <img
                 className={`${styles["img-style"]}`}
-                src="http://9to5mac.com/wp-content/uploads/sites/6/2014/02/iphone-6-dumb-concept.png"
+                src="https://www.dsc.du.ac.in/wp-content/uploads/2022/08/IMG-20220429-WA0001.jpg"
                 alt="ImageSeven"
                 width="100%"
               />
