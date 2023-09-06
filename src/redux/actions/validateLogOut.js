@@ -4,7 +4,7 @@ const validateLogOut = () => async (dispatch) => {
   const response = await axios.get("https://department-server.vercel.app/api/logout", {
     withCredentials: true,
   });
-  console.log(response.data);
+  console.log("LOGOUT: ", response.data);
 
   dispatch({
     type: "LOGOUT_SUCCESS",
