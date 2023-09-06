@@ -64,19 +64,19 @@ function App(props) {
             <ResetPassword />
           </Route>
           <Route exact path="/admin/dashboard">
-            {props.success ? <Dashboard /> : <Redirect to="/admin/signup" />}
+            {props?.success ? <Dashboard /> : <Redirect to="/admin/signup" />}
           </Route>
           <Route exact path="/admin/uploadnews">
-            {props.success ? <UploadNews /> : <Redirect to="/admin/signup" />}
+            {props?.success ? <UploadNews /> : <Redirect to="/admin/signup" />}
           </Route>
           <Route exact path="/admin/uploadevents">
-            {props.success ? <UploadEvents /> : <Redirect to="/admin/signup" />}
+            {props?.success ? <UploadEvents /> : <Redirect to="/admin/signup" />}
           </Route>
           <Route exact path="/admin/uploadNewEvent">
-            {props.success ? <AddEvent /> : <Redirect to="/admin/signup" />}
+            {props?.success ? <AddEvent /> : <Redirect to="/admin/signup" />}
           </Route>
           <Route exact path="/admin/addNews">
-            {props.success ? <AddNews /> : <Redirect to="/admin/signup" />}
+            {props?.success ? <AddNews /> : <Redirect to="/admin/signup" />}
           </Route>
         </Switch>
       </Router>
