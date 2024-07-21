@@ -30,7 +30,7 @@ function Events(props) {
               eventText={event.description}
               isLive={event.link ? true : false}
               link={event.link}
-              cardImg={"https://department-server-a76gwptdr-masterrachit777.vercel.app" + event.imagePath}
+              cardImg={"https://department-server.vercel.app" + event.imagePath}
             />)
           })}
       </Tab>
